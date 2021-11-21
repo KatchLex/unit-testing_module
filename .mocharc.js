@@ -1,4 +1,8 @@
 module.exports = {
   spec: "test/**/*.spec.js",
-  report: "mochawesome"
+  reporter: "mochawesome",
+  'reporter-option': [
+    'overwrite=false',
+    'showPassed=true'
+  ],
 };
