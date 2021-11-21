@@ -1,0 +1,22 @@
+{
+  "name": "unit-testing_module",
+  "version": "1.0.0",
+  "description": "unit testing attempt 2 with mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'test/**/*.js'"
+  },
+  "keywords": [
+    "mocha",
+    "unit",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^8.3.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^9.1.3"
+  }
+}
