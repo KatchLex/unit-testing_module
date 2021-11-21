@@ -4,7 +4,8 @@
   "description": "unit testing attempt 2 with mocha",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'test/**/*.js'"
+    "test": "mocha 'test/**/*.js'",
+    "coverage": "nyc npm run test"
   },
   "keywords": [
     "mocha",
@@ -17,6 +18,22 @@
     "chai": "^4.3.4",
     "eslint": "^8.3.0",
     "eslint-config-google": "^0.14.0",
-    "mocha": "^9.1.3"
+    "husky": "^7.0.4",
+    "lint": "^0.7.0",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "reporter": "html",
+    "check-coverage": true,
+    "branches": 60,
+    "lines": 20,
+    "functions": 30
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run coverage"
+    }
   }
 }

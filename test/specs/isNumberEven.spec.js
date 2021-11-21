@@ -10,6 +10,12 @@ describe(`isNumberEven positive`, function() {
     validator = null;
   });
   it(`should return true if the number is even`, function() {
-    expect(validator.isNumberEven(4)).to.be.equal(true);
+    expect(validator.isNumberEven(8)).to.be.equal(true);
+  });
+  it(`should return false if the number is odd`, function() {
+    expect(validator.isNumberEven(5)).to.be.equal(false);
+  });
+  it(`chai test`, function() {
+    expect(['a', 'apple', 'b', 17]).to.be.have.lengthOf(4);
   });
 });

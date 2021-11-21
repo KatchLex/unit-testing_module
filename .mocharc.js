@@ -1,4 +1,4 @@
-module.exports - {
+module.exports = {
   spec: "test/**/*.spec.js",
-  reporter: "spec"
+  report: "progress"
 };
